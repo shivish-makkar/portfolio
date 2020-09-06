@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+
+//STYLING
+import './index.css';
+
+//COMPONENTS
+import App from './App';
+import BadgerRecommendsLearnMore from "./content/badgerRecommendsLearnMore";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Switch>
+              <Route exact path="/" component={App} />
+              <Route exact path="/badgerRecommendsLearnMore" component={BadgerRecommendsLearnMore}/>
+          </Switch>
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

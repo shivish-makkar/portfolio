@@ -1,25 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
+
+//STYLING IMPORTS
 import './App.css';
+import 'antd/dist/antd.css';
+import { Affix, Layout} from 'antd';
+
+//COMPONENTS IMPORTS
+import Navbar from "./pageLayout/Navbar";
+import AppFooter from "./pageLayout/appFooter";
+import ImageComponent from "./content/ImageComponent";
+import AboutMe from "./content/AboutMe";
+import WorkExperience from "./content/WorkExperience";
+import Projects from "./content/Projects";
+import MyPassions from "./content/MyPassions";
+import ContactMe from "./content/ContactMe";
+
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <Layout style={{maxWidth: "100vw"}}>
+              <Affix offsetTop={0}>
+                  <Header>
+                      <Navbar/>
+                  </Header>
+              </Affix>
+
+              <Content>
+                  <ImageComponent />
+                  <AboutMe/>
+                  <WorkExperience />
+                  <Projects/>
+                  <MyPassions/>
+                  <ContactMe />
+              </Content>
+
+              <Footer style={{background: '#dcdcdc'}}>
+                 <AppFooter />
+              </Footer>
+          </Layout>
+    </>
   );
 }
 
