@@ -1,5 +1,5 @@
 import React from 'react';
-import {Divider, Row, Typography} from "antd";
+import { Card, Divider, Row, Typography} from "antd";
 
 import '../App.css'
 
@@ -9,7 +9,10 @@ function AboutMe(props) {
     return (
         <div className="aboutMeSection" id="aboutMe">
             <Row align="center" justify="center">
-                <div className="headshot" />
+            <Card
+                className="headshot"
+                cover= <img src="/my-headshot.jpg" alt="My Picture"/>
+                />
             </Row>
             <br/>
             <br/>

@@ -15,7 +15,7 @@ function PhotoLibraryCard(props) {
             marginRight: '1rem',
         }}>
             <Card
-                style={{ border: 'none' }}
+                style={{ border: 'none'}}
                 cover={
                     <img
                         alt="example"

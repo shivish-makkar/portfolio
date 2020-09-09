@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col, Typography, Divider} from "antd";
+import {Card, Row, Col, Typography, Divider} from "antd";
 import '../App.css'
 
 const { Title, Paragraph } = Typography;
@@ -18,7 +18,10 @@ function WorkExperience(props) {
             <Row align="middle">
                 <Col span={11}>
                     <Row justify="center">
-                        <div className="uw-madison-logo"/>
+                        <Card
+                            className="uw-madison-logo"
+                            cover=<img src="/uw-madison-logo.jpg" alt="UW-Madison Logo"/>
+                        />
                     </Row>
                 </Col>
                 <Col span={12} offset={1}>
@@ -52,7 +55,10 @@ function WorkExperience(props) {
             <Row align="middle">
                 <Col span={11}>
                     <Row justify="center">
-                        <div className="netro-logo"/>
+                        <Card
+                            className="netro-logo"
+                            cover=<img src="/netro-logo.png" alt="Logo of Netro Networks"/>
+                        />
                     </Row>
                 </Col>
                 <Col span={12} offset={1}>
