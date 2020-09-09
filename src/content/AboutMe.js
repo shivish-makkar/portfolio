@@ -11,7 +11,7 @@ function AboutMe(props) {
             <Row align="center" justify="center">
             <Card
                 className="headshot"
-                cover= <img src="/my-headshot.jpg" alt="My Picture"/>
+                cover= <img src="/my-headshot.jpg" alt="My Headshot"/>
                 />
             </Row>
             <br/>
