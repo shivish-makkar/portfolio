@@ -21,7 +21,7 @@ function Projects(props) {
             <Row justify="space-around">
                 <Col span={10}>
                     <ProjectsCard
-                        title="Badgers Recommends"
+                        title="Badger Recommends"
                         description="An attempt at launching a Product in the market, in collaboration with with a
                         backend developer and designer. My responsibilities include the role of frontend developer
                         and product manager."
