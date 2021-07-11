@@ -20,6 +20,45 @@ function WorkExperience(props) {
                     <Row justify="center">
                         <Card
                             className="uw-madison-logo"
+                            cover=<img src="/datachat-logo.jpeg" alt="DataChat Logo"/>
+                        />
+                    </Row>
+                </Col>
+                <Col span={12} offset={1}>
+                    <Title className="title" level={3}>
+                        Software Engineering Intern
+                    </Title>
+                    <Paragraph className="paragraphAboutMe">
+                        <div>
+                            DataChat
+                        </div>
+                        <div style={{ fontStyle: 'italic'}}>
+                            November 2020 – May 2021
+                        </div>
+                    </Paragraph>
+                    <Paragraph className="paragraphAboutMe">
+                        This internship was where I was not only able to fully apply what I learnt in school, but
+                        I also had the amazing opportunity to learn what school hadn't taught me yet.
+                    </Paragraph>
+                    <Paragraph className="paragraphAboutMe">
+                        Not only was I able to take my react.js skills to another level by interacting with an extremely
+                        complex codebase, I was also able to interact with technologies such as Redux and Sagas. I was
+                        also able to apply UI/UX design principles that I was learning the very same semester. While I
+                        focused mostly on the frontend for the first few months, I pushed myself to interact with the
+                        backend technologies in the later couple months.
+                    </Paragraph>
+                    <Paragraph className="paragraphAboutMe">
+                        This opportunity improved my technical skills many-fold, but it also taught me how to effectively
+                        work collaboratively within an organization to deliver the best results, something of extremely
+                        high value in this fast-paced startup.
+                    </Paragraph>
+                </Col>
+            </Row>
+            <Row align="middle">
+                <Col span={11}>
+                    <Row justify="center">
+                        <Card
+                            className="uw-madison-logo"
                             cover=<img src="/uw-madison-logo.jpg" alt="UW-Madison Logo"/>
                         />
                     </Row>
@@ -33,7 +72,7 @@ function WorkExperience(props) {
                             Office of Data Management and Analytics at UW-Madison
                         </div>
                         <div style={{ fontStyle: 'italic'}}>
-                            January 2020 – Present
+                            January 2020 – November 2020
                         </div>
                     </Paragraph>
                     <Paragraph className="paragraphAboutMe">

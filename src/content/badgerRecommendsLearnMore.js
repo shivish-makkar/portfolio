@@ -211,7 +211,7 @@ function BadgerRecommendsLearnMore() {
             </Row>
             <Row justify="center">
                 <Paragraph className="paragraphAboutMe">
-                    Our first iteration is due to launch towards the end of October 2020, so stay tuned!
+                    Our first iteration is due to launch towards the end of August 2021, so stay tuned!
                 </Paragraph>
             </Row>
         </>
